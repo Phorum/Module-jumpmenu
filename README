@@ -1,9 +1,8 @@
-Module  : Jumpmenu
-Version : 1.2.0
-Author  : Maurice Makaay <maurice@phorum.org>
+Module  : @TITLE@
+Version : @VERSION@
+Author  : @AUTHOR@
 
-This module adds a menu to the Phorum pages, which can be used to quickly
-select a forum to jump to. Forum folders will be shown as submenus.
+@DESCRIPTION@
 
 
 Install:
@@ -11,13 +10,13 @@ Install:
 
 - Unpack the archive;
 
-- Move the directory "jumpmenu" to the directory "mods"
+- Move the directory "@MODULE_ID@" to the directory "mods"
   within your Phorum installation;
 
 - Login as administrator in Phorum's administrative interface and
   go to the "Modules" section;
 
-- Enable the module "Jumpmenu".
+- Enable the module "@TITLE@".
 
 
 Customization:
@@ -26,8 +25,8 @@ Customization:
 This module makes use of module templates. If you want to modify the
 templates to make them work better for your site's template, then do not
 edit the template files that were in the module distribution. Instead,
-copy the full directory "mods/jumpmenu/templates/emerald" to
-"mods/jumpmenu/templates/yourtemplatename" (asuming that your site's
+copy the full directory "mods/@MODULE_ID@/templates/emerald" to
+"mods/@MODULE_ID@/templates/yourtemplatename" (asuming that your site's
 template is stored as "templates/yourtemplatename") and edit the files
 in the new directory. Phorum will automatically recognize that you have
 created a specific template set to use for your site's active template.
@@ -45,7 +44,7 @@ The available template files are:
 
 If you want to create your own root item for the menu, then you can edit
 your main Phorum template to include some element that has
-id="mod_jumpmenu_root" in its properties. The Jumpmenu module wil
+id="mod_jumpmenu_root" in its properties. The module will
 automatically use that one as the root element, for example:
 
   <a id="mod_jumpmenu_root">
